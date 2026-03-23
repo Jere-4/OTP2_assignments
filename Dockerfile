@@ -7,11 +7,6 @@ COPY pom.xml .
 
 COPY . /app
 
-RUN mvn clean package -DskipTests
-
-COPY target/shoppingcart.jar app.jar
-
-
 RUN mvn package
 
-CMD ["java", "-jar", "target/shoppingcart.jar"]
+CMD ["java", "-jar", "target/OTP2_assignments-1.0-SNAPSHOT.jar"]
