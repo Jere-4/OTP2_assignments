@@ -9,4 +9,4 @@ COPY . /app
 
 RUN mvn package
 
-CMD ["java", "-jar", "target/ShoppingCartApp.jar"]
+CMD ["java", "-jar", "target/OTP2_assignments.jar"]
